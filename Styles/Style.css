@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFD1DC;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 8vw;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-shadow: 
+        0px 1px 0px #c0c0c0, 
+        0px 2px 0px #b0b0b0, 
+        0px 3px 0px #a0a0a0, 
+        0px 4px 0px #909090, 
+        0px 5px 10px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Txt {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+}
+
+p {
+    margin: 0;
+    padding: 20px;
+}
+
+.Btn {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.Polaroid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    perspective: 1000px;
+}
+
+Img {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background: white;
+    padding: 20px;
+    padding-bottom: 80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+video.Img {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background: white;
+    padding: 20px;
+    padding-bottom: 80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
