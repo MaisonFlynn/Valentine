@@ -37,6 +37,7 @@ p {
 .Btn {
     display: flex;
     gap: 20px;
+    width: 150px;
 }
 
 button {
